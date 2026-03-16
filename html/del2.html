@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="sv"> <!-- Sätter språket till svenska för webbsidan, dels för validatorn och dels för tillgängligheten -->
+    <head>
+        <meta charset="UTF-8"><!-- Specificerar kodningen till UTF-8, vilket ger stöd för bokstäver såsom Å, Ä, Ö och andra tecken.-->
+        <title>DA280A - Inlämning 1, del 2</title>
+    </head>
+    <body>
+        <nav> <!-- Mycket enkelt nav-element i syfte att öka tillgängligheten på webbsidan -->
+            <ul> <!-- Simpel unordered list -->
+                <li><a href="index.html">Ta mig tillbaka till del 1.</a></li> <!-- Länk till del ett av inlämningsuppgiften -->
+            </ul>
+        </nav>
+
+        <h1>Svar på frågorna för del 2</h1> <!-- Webbsidans huvudrubrik, det får bara finnas ett h1-element -->
+        <p>Observera att du behöver klicka på frågan för att svaret ska visas. Se det som flashcards. (Visst är det häftigt att det är ren HTML utan någon JavaScript!)</p> <!-- Kort förklaring av hur webbsidan fungerar -->
+        <ol> <!-- Ordered list för att numrera frågorna på samma vis som de presenteras på mau-webb -->
+            <li>
+                <details> <!-- Läs mer om details-elementet här: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details -->
+                    <summary><strong>Förklara kort vad ett element, attribut och värde är för något</strong></summary> <!-- Själva frågan -->
+                    <!-- Följt av svaret på frågan-->
+                    <ul>
+                        <li>Ett element kan bäst beskrivas som en komponent av en hemsida, oftast består ett element av en öppningstagg och en stängningstagg men vissa element är sjävstängade. Ett exemepel på ett självstängande element är <code>br</code>-elementet.</li>
+                        <li>Ett attribut kan sägas tillföra extra information till ett element som påverkar elementet, ett exempel på ett attribut skulle kunna vara <code>src</code>-attributet för <code>img</code>-elementet.</li>
+                        <li>Ett värde specificeras för ett attribut, ett exmepel skulle kunna vara en url till en hemsida i <code>href</code>-attributet för <code>a</code>-elementet. Värden placeras innanför citattecken (&#34;)</li>
+                    </ul>
+                </details>
+            </li>
+
+            <!-- Då samma princip gäller för samtliga följande list items har jag valt att inte kommentera dessa, se kommentarerna ovan. -->
+            <li>
+                <details>
+                    <summary><strong>Förklara vad HTTP är för något och vad ett <em>kommunikationsprotokoll</em> innebär</strong></summary>
+                    <p>HTTP står för &#34;Hypertext Transfer Protocol&#34; och ligger till grunden för datakommunikation över World Wide Web. Det är tack vare detta kommunikationsprotokoll som vi kan besöka olika hemsidor, protokollet låter oss ladda ner och visa webbsidor. Den som läst DVG001 (Introduktion till Linux och små nätverk) på högskolan i Gävle vet att HTTP vanligtvis använder sig av port 80. Om du näthandlar eller utför andra aktiviter som involverar känslig data rekommenderas istället protokollet HTTPS som krypterar trafiken. HTTPS använder sig vanligtvis av port 443.</p>
+                    <p>Kommunikationsprotokoll kan enkelt förklaras som en standard med regler över hur digital kommunikation går till. Det finns flera olika kommunikationsprotokoll ämnade att lösa olika problem. HTTP och HTTPS är två exempel på kommunikationsprotokoll.</p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary><strong>Vilka är <em>W3C</em> och vilken är deras huvudsakliga uppgift?</strong></summary>
+                    <p>W3C (World Wide Web Consortium) är ett konsortium som utvecklar tekniska standarder för World Wide Web med en utgångspunkt om att webben är för alla. Tillgänglighet är en av flera viktiga frågor för W3C.
+                        <a href="https://www.w3.org/mission/">Du kan läsa mer här</a>.</p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary><strong>Vad står <em>WWW</em> för och vad är detta för något?</strong></summary>
+                    <p>WWW står för World Wide Web och är en typ av infromationssystem som gör det möjligt att dela innehåll/dokument över internet. Utan World Wide Web hade det varit svårt att delta i denna distanskurs.</p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary><strong>En typisk internetadress kan se ut på följande vis http://www.facebook.com/home.php.</strong></summary>
+                    <ul>
+                        <li>Vad kallas denna internetadress på fackspråk (en förkortning)?</li>
+                        <li>Vad betyder denna förkortning?</li>
+                        <li>Vad kallas
+                            <ol type="a">
+                                <li><code>http://</code></li>
+                                <li><code>www.facebook.com</code></li>
+                                <li><code>/home.php?</code></li>
+                            </ol>
+                        </li>
+                    </ul>
+
+                    <p>URL, kort för <em>Uniform Resource Locator</em>. En URL en adress till en webbsida (webbadress) eller fil.</p>
+                    <p><code>http://</code> är en <code>URL scheme</code> och visar vanligtvis vilket protokoll som används, i detta fall <code>HTTP</code>.</p>
+                    <p><code>www.facebook.com</code> är ett så kallat värdnamn och kan delas in i tre delar: subdomän (www), domän (facebook), toppdomän (.com).</p>
+                    <p><code>/home.php?</code> kalls för <code>path</code> (sökväg).</p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary><strong>Vad använder vi kommunikationsprotokollet FTP till?</strong></summary>
+                    <p>Kommunikations- och filöverföringsprotokollet FTP står för <code>File Transfer Protocol</code> och används för att föra över filer mellan två datorer.</p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary><strong>Vilken modell bygger HTTP på? Modellen beskriver förhållandet mellan en dator som svarar och en dator som ställer förfrågan om att få se webbplatserna.</strong></summary>
+                    <p>HTTP bygger på <code>klient-server modellen</code>. Klienten öppnar en anslutning för att göra en förfrågan och väntar sedan på att få ett svar från servern.</p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary><strong>Vad står HTML för och vilket typ av språk är detta?</strong></summary>
+                    <p>HTML är kort för <code>Hypertext Markup Language</code> och är ett så kallat märkspråk.</p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary><strong>Varför använder vi oss av <em>indentering</em> (indrag) när vi skriver HTML-kod?</strong></summary>
+                    <p>Av samma anledning som vi använder oss av stor bokstav, punkt och styckesindelning. Det gör det lättare att läsa och förstå det vi skrivit.</p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary><strong>Blir det någon skillnad på utseendet av sidan när du <em>indenterar</em> din HTML-kod?</strong></summary>
+                    <p>Nej.</p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary><strong>Varför tror du att vi lär oss behärska HTML-kod från grunden till skillnad från att generera HTML-kod med hjälp av s.k. WYSIWYG-programvaror och HTML-generatorer?</strong></summary>
+                    <p>Eftersom det ger ökad kontroll att göra exakt det vi vill. Dessutom skadar det inte att förstå vad WYSIWYG-editorer eller HTML-generatorer faktiskt genererar. Dessutom är det kul att lära sig något nytt och förstå sin omvärld.</p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary><strong>Vilka två delar består ett HTML-dokument av? Vilken sorts information finns i respektive del?</strong></summary>
+                    <p>Jag förmodar att du syftar på huvudet (<code>head</code>) och kroppen (<code>body</code>). Huvudet består av en hel del saker som inte syns på själva sidan (om man inte räknar med titeln som syns i fliken av webbläsaren). Kroppen är det som syns på sidan.</p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary><strong>Varför har vi s.k. HTML-kommentarer i vår kod?</strong></summary>
+                    <p>Av samma skäl som vi kommenterar kod i valfritt programmeringsspråk. För att tillföra extra kontext och information som underlättar förståelsen för den som läser koden. Även om HTML som märkspråk kan tyckas vara väldigt enkelt för den som är erfaren så kan kommentarer tillföra värdefull information till utvecklaren/utvecklarna eller till och med användas för att temporärt ta bort innehåll från en sida som man inte vill radera helt och hållet.</p>
+                </details>
+            </li>
+        </ol>
+
+        <br> <!-- Lite white space utan att använda CSS -->
+        <hr> <!-- Drar ett streck mellan innehåll, bör kanske egentligen göras med CSS då det enbart är i dekorativt syfte - men det får vänta tills CSS introduceras i kursen -->
+        <footer>
+            <p>Hemsidan är skapad av <a href="https://snicon.rip">Sixten Peterson</a> för kursen <a href="https://mau.se/sok-utbildning/kurser/DA280A">DA280A</a> på
+                <a href="https://mau.se/">Malmö Universitet</a>. Källkoden finns tillgänglig på <a href="https://github.com/Snicon/DA280A_Web-Development-I">Github</a>.</p>
+        </footer>
+    </body>
+</html>

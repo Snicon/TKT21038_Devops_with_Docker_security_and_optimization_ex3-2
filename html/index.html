@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="sv"> <!-- Sätter språket till svenska för webbsidan, dels för validatorn och dels för tillgängligheten -->
+    <head>
+        <meta charset="UTF-8"> <!-- Specificerar kodningen till UTF-8, vilket ger stöd för bokstäver såsom Å, Ä, Ö och andra tecken.-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Här för responsivitet -->
+        <title>DA280A - Inlämning 1, del 1</title> <!-- Specificerar titeln för webbsidan -->
+    </head>
+    <body>
+        <nav id="huvudnavigation"> <!-- Mycket enkelt nav-element i syfte att öka tillgängligheten på webbsidan -->
+            <ul> <!-- Simpel unordered list -->
+                <li><a href="del2.html">Besök webbsidan för del 2 av inlämning 1.</a></li> <!-- Länk till del två av inlämningsuppgiften -->
+            </ul>
+        </nav>
+
+        <h1>Författaren Cal Newport</h1> <!-- Webbsidans huvudrubrik, det får bara finnas ett h1-element -->
+        <figure> <!-- Jag valde att nyttja figure-elementet för att lägga till en bildtext då det ökar tillgängligheten på webbsidan. -->
+            <img width="200" src="assets/images/cal_newport.jpg" alt="Cal Newport ser dig djupt in i själen, bakom honom skymtas en bokhylla fylld med böcker."> <!-- Även om det inte är det bästa värdet på alt-attributet ökar det tillgängligheten. Width-attributet har fått ett värde för att minska på storleken av bilden. -->
+            <figcaption>En porträttbild av Cal Newport.</figcaption> <!-- Bildtext -->
+        </figure>
+
+        <h2>Vem är Cal Newport?</h2> <!-- Underrubrik -->
+        <p><a href="https://calnewport.com/"><em>Cal Newport</em></a> är en bästsäljande författare som arbetar som professor inom datavetenskap för Georgetown University.</p> <!-- Kort beskrivning av författaren -->
+
+        <h2>Kända böcker</h2> <!-- Underrubrik -->
+        <!-- Nedan listas några av författarens populära verk, där boktiteln är på engelska justeras lang-attributet med ett värde på "en" för ökad tillgänglighet. -->
+        <p>Tre av författarens mest kända verk är följande böcker:</p>
+        <ul>
+            <li lang="en"><strong>Deep Work</strong>: Rules for Focused Success in a Distracted World</li>
+            <li lang="en"><strong>A World Without Email</strong>: Reimagining Work in an Age of Communication Overload</li>
+            <li lang="en"><strong>Digital Minimalism</strong>: Choosing a Focused Life in a Noisy World</li>
+        </ul>
+
+        <h3>Rangordning av böckerna</h3> <!-- Djupare nivå av underrubrik. -->
+        <!-- Nedan presenteras min rangordning ab böckerna med hjälp av en ordered list för att tydligt visa vilken position böckerna hamnar på. Även här justeras lang-attributet. -->
+        <p>Nedan presenteras mina favoriter från författaren, rangordnade bäst till sämst utifrån mitt eget tycke och smak.</p>
+        <ol>
+            <li><span lang="en">Digital Minimalism</span></li>
+            <li><span lang="en">Deep Work</span></li>
+            <li><span lang="en">A World Without Email</span></li>
+        </ol>
+
+        <h3>Köp böckerna</h3> <!-- Ytterligare en djupare nivå av underrubrik. -->
+        <p>Nedan presenteras länkar till både Amazon och Bokus för att beställa Newports böcker.</p>
+
+        <h4 lang="en">Deep Work</h4> <!-- Samma princip som den tidigare koden. -->
+        <ul>
+            <li><a href="https://www.amazon.se/-/en/Deep-Work-Focused-Success-Distracted/dp/0349411905">Beställ hos Amazon</a></li>
+            <li><a href="https://www.bokus.com/bok/9780349411903/deep-work/">Beställ hos Bokus</a></li>
+        </ul>
+
+        <h4 lang="en">A World Without Email</h4>
+        <ul>
+            <li><a href="https://www.amazon.se/-/en/World-Without-Email-Reimagining-Communication/dp/0593332601">Beställ hos Amazon</a></li>
+            <li><a href="https://www.bokus.com/bok/9780241341414/world-without-email/">Beställ hos Bokus</a></li>
+        </ul>
+
+        <h4 lang="en">Digital Minimalism</h4>
+        <ul>
+            <li><a href="https://www.amazon.se/-/en/Digital-Minimalism-Choosing-Focused-Noisy/dp/0241453577">Beställ hos Amazon</a></li>
+            <li><a href="https://www.bokus.com/bok/9780241453575/digital-minimalism/">Beställ hos Bokus</a></li>
+        </ul>
+
+        <!-- En enkel footer -->
+        <br> <!-- Lite white space utan att använda CSS -->
+        <hr> <!-- Drar ett streck mellan innehåll, bör kanske egentligen göras med CSS då det enbart är i dekorativt syfte - men det får vänta tills CSS introduceras i kursen -->
+        <footer>
+            <p>Hemsidan är skapad av <a href="https://snicon.rip">Sixten Peterson</a> för kursen <a href="https://mau.se/sok-utbildning/kurser/DA280A">DA280A</a> på
+                <a href="https://mau.se/">Malmö Universitet</a>. Källkoden finns tillgänglig på <a href="https://github.com/Snicon/DA280A_Web-Development-I">Github</a>.</p>
+        </footer>
+    </body>
+</html>
