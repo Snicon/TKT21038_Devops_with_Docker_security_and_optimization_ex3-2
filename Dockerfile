@@ -1,4 +1,4 @@
-FROM nginx:1.27.2 # Config based on https://github.com/rjoonas/heroku-docker-nginx-example/tree/master since heroku proved to be a pain in the ass with how the port works
+FROM nginx:1.27.2
 
 
 COPY default.conf.template /etc/nginx/conf.d/default.conf.template
